@@ -1,6 +1,6 @@
 import { UIView } from '@uirouter/react'
-import { PanelTransitionState } from 'components/Panel/PanelTypes'
-import { updateBodyForOpening } from 'components/Panel/panelHelper'
+import { PanelTransitionState } from './components/Panel/PanelTypes'
+import { updateBodyForOpening } from './components/Panel/panelHelper'
 import * as React from 'react'
 import { ApolloConsumer } from 'react-apollo'
 
@@ -46,6 +46,7 @@ const DrawerButton = () => {
 }
 
 const OfferPage = () => {
+  console.log('hello world')
   return (
     <>
       <DrawerButton />
