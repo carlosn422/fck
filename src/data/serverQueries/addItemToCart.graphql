@@ -1,0 +1,21 @@
+mutation addItemToCart($cartId: String!, $cartItem: AddCartItem!) {
+  addItemToCart(cartId: $cartId, cartItem: $cartItem) {
+    cId
+    __typename
+    items {
+      id
+      quantity
+      __typename
+      offerItem {
+        cId
+        startingPrice
+        __typename
+      }
+      lineItems {
+        __typename
+        type
+        value
+      }
+    }
+  }
+}

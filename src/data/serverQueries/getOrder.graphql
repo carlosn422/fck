@@ -1,0 +1,42 @@
+query getOrder($id: ID!) {
+  order(id: $id) {
+    id
+    group {
+      name
+      id
+      users {
+        id
+        lastName
+        firstName
+        email
+      }
+    }
+    cart {
+      cId
+      items {
+        __typename
+        id
+        quantity
+        offerItem {
+          cId
+          startingPrice
+        }
+        lineItems {
+          __typename
+          type
+          value
+        }
+      }
+    }
+    payments {
+      amount
+      id
+      user {
+        id
+        email
+        firstName
+        lastName
+      }
+    }
+  }
+}

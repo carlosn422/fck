@@ -1,0 +1,15 @@
+query timedUserSelectionsQuery {
+  timedUserSelections @client {
+    priceRange {
+      lowerBound
+      upperBound
+      __typename
+    }
+    chosenTime {
+      selectedMonthsDate
+      selectedTimeSlot
+      __typename
+    }
+    __typename
+  }
+}

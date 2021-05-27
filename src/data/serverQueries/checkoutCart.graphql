@@ -1,0 +1,29 @@
+mutation checkoutCart($cartId: ID!) {
+  checkoutCart(cartId: $cartId) {
+    id
+    group {
+      name
+      id
+      users {
+        id
+        lastName
+        firstName
+        email
+      }
+    }
+    cart {
+      cId
+    }
+    payments {
+      amount
+      id
+      user {
+        id
+        email
+        id
+        firstName
+        lastName
+      }
+    }
+  }
+}

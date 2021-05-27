@@ -1,0 +1,33 @@
+query offerItemUserSelectionsQuery {
+  offerItemUserSelections @client {
+    selectedOfferItem {
+      id
+      type
+      media
+      htmlDescription
+      additionalMedia
+      additionalDescription
+      parentId
+      title
+      thumbnailImage
+      description
+      startingPrice
+      __typename
+    }
+    selectedAdditionalOfferItem {
+      id
+      type
+      media
+      htmlDescription
+      additionalMedia
+      additionalDescription
+      parentId
+      title
+      thumbnailImage
+      description
+      startingPrice
+      __typename
+    }
+    __typename
+  }
+}

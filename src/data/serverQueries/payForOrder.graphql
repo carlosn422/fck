@@ -1,0 +1,34 @@
+mutation payForOrder(
+  $orderId: ID!
+  $amount: Float!
+  $user: UserCreateInput!
+  $group: GroupCreateInput
+) {
+  payForOrder(orderId: $orderId, amount: $amount, user: $user, group: $group) {
+    id
+    group {
+      name
+      id
+      users {
+        id
+        lastName
+        firstName
+        email
+      }
+    }
+    cart {
+      cId
+    }
+    payments {
+      amount
+      id
+      user {
+        id
+        email
+        id
+        firstName
+        lastName
+      }
+    }
+  }
+}

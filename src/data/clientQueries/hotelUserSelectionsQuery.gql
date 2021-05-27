@@ -1,0 +1,26 @@
+query hotelUserSelectionsQuery {
+  hotelUserSelections @client {
+    priceRange {
+      lowerBound
+      upperBound
+      __typename
+    }
+    travelDates {
+      startDate
+      endDate
+      selectedMonthsDate
+      __typename
+    }
+    roomPreferences {
+      numAdults
+      numChildren
+      numRooms
+      __typename
+    }
+    timeslot {
+      date
+      __typename
+    }
+    __typename
+  }
+}

@@ -1,0 +1,10 @@
+query merchUserSelectionsQuery {
+  merchUserSelections @client {
+    priceRange {
+      lowerBound
+      upperBound
+      __typename
+    }
+    __typename
+  }
+}

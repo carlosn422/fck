@@ -1,0 +1,10 @@
+query eventUserSelectionsQuery {
+  eventUserSelections @client {
+    priceRange {
+      lowerBound
+      upperBound
+      __typename
+    }
+    __typename
+  }
+}

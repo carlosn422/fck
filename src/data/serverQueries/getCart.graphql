@@ -1,0 +1,20 @@
+query getCart($cId: ID!) {
+  cart(cId: $cId) {
+    __typename
+    cId
+    items {
+      __typename
+      id
+      quantity
+      offerItem {
+        cId
+        startingPrice
+      }
+      lineItems {
+        __typename
+        type
+        value
+      }
+    }
+  }
+}

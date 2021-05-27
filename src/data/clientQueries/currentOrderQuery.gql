@@ -1,0 +1,11 @@
+query currentOrderQuery {
+  currentOrder @client {
+    address
+    firstName
+    lastName
+    email
+    groupName
+    phone
+    __typename
+  }
+}

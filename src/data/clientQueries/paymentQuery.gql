@@ -1,0 +1,20 @@
+query paymentQuery {
+  payment @client {
+    purchaserName
+    amountOwed
+    splitPay {
+      isSplitPay
+      splitType
+      friends {
+        name
+        phone
+        email
+        splitAmount
+        id
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

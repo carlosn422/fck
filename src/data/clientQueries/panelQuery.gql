@@ -1,0 +1,9 @@
+query panelQuery {
+  panelState @client {
+    panelTransitionState
+    scrollTop
+    primaryPaneState
+    secondaryPaneState
+    __typename
+  }
+}

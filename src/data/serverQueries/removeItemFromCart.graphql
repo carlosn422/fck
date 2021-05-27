@@ -1,0 +1,19 @@
+mutation removeItemFromCart($cartId: String!, $cartItemId: ID!) {
+  removeItemFromCart(cartId: $cartId, cartItemId: $cartItemId) {
+    cId
+    items {
+      __typename
+      id
+      quantity
+      offerItem {
+        cId
+        startingPrice
+      }
+      lineItems {
+        __typename
+        type
+        value
+      }
+    }
+  }
+}

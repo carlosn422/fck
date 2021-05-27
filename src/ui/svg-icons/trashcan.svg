@@ -1,0 +1,27 @@
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+import React from "react";
+export default ((_ref) => {
+  let {
+    styles = {}
+  } = _ref,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return React.createElement(
+    "svg",
+    _extends({ width: "15", height: "16", viewBox: "0 0 15 16", xmlns: "http://www.w3.org/2000/svg", fill: "#908F8F" }, props),
+    React.createElement(
+      "title",
+      null,
+      "Trashcan"
+    ),
+    React.createElement(
+      "g",
+      { fillRule: "evenodd" },
+      React.createElement("path", { d: "M7.459 12.454c-.22 0-.397-.156-.397-.347V5.31c0-.191.178-.347.397-.347.218 0 .396.156.396.347v6.796c0 .191-.178.347-.396.347zm2.614 0c-.219 0-.396-.156-.396-.347V5.31c0-.191.177-.347.396-.347.219 0 .397.156.397.347v6.796c0 .191-.178.347-.397.347zm-5.229 0c-.219 0-.397-.156-.397-.347V5.31c0-.191.178-.347.397-.347.219 0 .397.156.397.347v6.796c0 .191-.178.347-.397.347z" }),
+      React.createElement("path", { d: "M11.662 15.19H3.256L2.13 2.293h10.655L11.662 15.19zM5.448.99c0-.163.148-.296.33-.296h3.36c.183 0 .33.133.33.297v.608h-4.02V.99zm9.073.609h-4.259V.99C10.262.445 9.758 0 9.14 0h-3.36c-.62 0-1.124.445-1.124.99V1.6H.397c-.22 0-.397.155-.397.347 0 .191.178.347.397.347h.939l1.156 13.271c.016.181.188.321.396.321h9.141c.208 0 .38-.14.396-.32l1.157-13.272h.939c.218 0 .396-.156.396-.347 0-.192-.178-.347-.396-.347z" })
+    )
+  );
+});

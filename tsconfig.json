@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "module": "commonJS",
+    "target": "es6",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+   // "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    //"resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "jsx": "react",
+    "downlevelIteration": true,
+   //  "typeRoots": [
+    //  "src/custom-typings",
+    //  "node_modules/@types",
+    // "/src/",
+    //"/src/**/*"
+    //],
+      //"types": ["node"],
+      "baseUrl": "src"
+
+  }  
+}
