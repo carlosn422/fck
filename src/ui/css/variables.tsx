@@ -1,4 +1,4 @@
-import { css } from 'react-emotion'
+import { css } from '@emotion/css'
 
 // const brandColor = window['primaryBrandColor'] || '#FF7676'
 const brandColors = window['brandColors']
