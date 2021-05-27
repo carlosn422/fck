@@ -1,4 +1,4 @@
-const express = require('express');
+import express, { static } from 'express';
 const app = express();
 
 //const PORT = 9000;
@@ -6,11 +6,11 @@ const app = express();
 //   res.setHeader("Content-Type", "application/json");
 //   next();
 // })
-app.use(express.static('dist'));
-app.use(express.static('./'));
+app.use(static('dist'));
+app.use(static('./'));
 
 app.get('/', function(req, res) {
-  res.sendfile('index.html');
+  res.sendFile('index.html');
 });
 
 var PORT = process.env.PORT

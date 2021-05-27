@@ -1,5 +1,5 @@
 import { colors, typography, mediaQueries } from './variables'
-import { css } from 'emotion'
+import { css } from '@emotion/css'
 
 const baseButton = css`
   font-weight: bold;

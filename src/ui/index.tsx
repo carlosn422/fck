@@ -1,10 +1,31 @@
-import fevo from 'css/fevo'
-import forms from 'css/forms'
-import reset from 'css/reset'
-import { injectGlobal } from 'emotion'
+//import fevo from './css/fevo'
+import forms from './css/forms'
+import reset from './css/reset'
+import { css,injectGlobal } from '@emotion/css'
 import * as React from 'react'
 import { render as ReactDomRender } from 'react-dom'
 import App from './App'
+
+const fevo =css `
+  html.fevo-panel-open {
+    overflow: hidden;
+  }
+
+  body.fevo-panel-open,
+  .container-root.fevo-panel-open {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: initial !important;
+    transition: none !important;
+    min-width: 0 !important;
+  }
+  /* World beach games */
+  .fuc-demo-container {
+    height: 100vh;
+    position: relative;
+  }
+`;
 
 declare var module: any
 

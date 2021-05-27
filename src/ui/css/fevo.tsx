@@ -1,6 +1,8 @@
-import { css } from 'emotion'
+/** @jsx jsx */
+import { css } from '@emotion/css'
 
-export default css`
+
+  const  fevo =css `
   html.fevo-panel-open {
     overflow: hidden;
   }
@@ -19,4 +21,6 @@ export default css`
     height: 100vh;
     position: relative;
   }
-`
+`;
+
+export default fevo
