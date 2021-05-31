@@ -2,7 +2,7 @@ import {
   PaneType,
   PaneMode,
   PanelTransitionState
-} from 'components/Panel/PanelTypes'
+} from './PanelTypes'
 
 export const updateBodyForOpening = windowTop => {
   document.body.style.top = `${-1 * windowTop}px `

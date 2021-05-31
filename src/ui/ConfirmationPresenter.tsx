@@ -1,4 +1,4 @@
-import PanelLayout from 'components/Panel/PanelLayout'
+import PanelLayout from './components/Panel/PanelLayout'
 import OfferProvider from 'data/OfferProvider'
 import * as React from 'react'
 import withRoutes, { AddedProps } from 'router/withRoutes'

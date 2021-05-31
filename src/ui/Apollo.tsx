@@ -5,7 +5,7 @@ import { HttpLink } from 'apollo-link-http'
 import { ApolloLink } from 'apollo-link'
 import { merge } from 'lodash'
 import { UserSelectionsResolverAndDefaults } from 'data/UserSelectionsStore'
-import { PanelResolverAndDefaults } from 'components/Panel/PanelLayout'
+import { PanelResolverAndDefaults } from './components/Panel/PanelLayout'
 import { CheckoutDefaults } from 'data/CheckoutStore'
 
 const httpLink = new HttpLink({

@@ -1,15 +1,20 @@
 import OfferPresenter from './OfferPresenter'
 import ConfirmationPresenter from './ConfirmationPresenter'
 import CheckoutPresenter from './CheckoutPresenter'
-import * as React from 'react'
-import { Transition } from '@uirouter/react'
 import OfferPage from './OfferPage'
+import Test from './Test'
 
 export enum Fuc {
   OfferPage = 'offerPage',
   Offer = 'offerPage.offer',
   Checkout = 'offerPage.checkout',
   Confirm = 'offerPage.confirm'
+}
+
+export const test = {
+  name: 'test',
+  component: Test,
+  url: '/test',
 }
 
 export const app = {
@@ -31,13 +36,29 @@ export const offer = {
 export const checkout = {
   name: Fuc.Checkout,
   component: CheckoutPresenter,
-  url: '/order/:orderId'
+  url: '/order'
 }
 
 export const confirm = {
   name: Fuc.Confirm,
   component: ConfirmationPresenter,
-  url: '/confirm/:orderId'
+  url: '/confirm'
 }
 
-export const states = [app, offer, checkout, confirm]
+export const states = [
+  {
+    name: 'test',
+    component: Test,
+    url: '/test',
+  },
+  {
+    name: 'offer.uri',
+    component: OfferPage,
+    url: '/offer/:offerPageUri',
+  },
+  {
+    name: 'offer',
+    component: OfferPage,
+    url: '/offer',
+  },
+]

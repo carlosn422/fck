@@ -1,16 +1,16 @@
 import * as React from 'react'
 
 import { confirmationStyles } from './styles'
-import { panelCss } from 'components/Panel/styles'
+import { panelCss } from '../Panel/styles'
 
-import Share from 'components/Share/Share'
+import Share from '../Share/Share'
 
 import OfferProvider from 'data/OfferProvider'
 
 import {
   clickOutsideWrapper,
   InjectedProps
-} from 'components/Shared/ClickOutsideWrapper'
+} from '../Shared/ClickOutsideWrapper'
 import withRoutes, { AddedProps } from 'router/withRoutes'
 import { css } from 'react-emotion'
 import { fonts, colors } from 'css/variables'

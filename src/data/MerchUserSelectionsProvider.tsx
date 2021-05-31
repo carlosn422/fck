@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { graphql, Query } from 'react-apollo'
-import { Panel } from 'components/Panel/Panel'
+import { Panel } from '../ui/components/Panel/Panel'
 import {
   MerchCartData,
   MerchOffer as IMerchOffer
 } from 'custom-typings/offerTypes'
-import MerchOffer from 'components/Offer/MerchOffer'
+import MerchOffer from '../ui/components/Offer/MerchOffer'
 import UserSelectionsStore, { PriceRange } from 'data/UserSelectionsStore'
 import { AnyOfferItem } from 'custom-typings/offerTypes'
 
